@@ -1,0 +1,45 @@
+
+:root{--bg:#f7f4ee;--paper:#fffdf9;--ink:#1f2328;--muted:#6b6f76;--line:#e4ded3;--acc:#8a5a2b;--chat:#eceff2;--night:#1b2430}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15181c;--paper:#1c2025;--ink:#e6e3dd;--muted:#a0a4ab;--line:#2c3138;--acc:#d6a06a;--chat:#262b31;--night:#0f1317}}
+:root[data-theme="dark"]{--bg:#15181c;--paper:#1c2025;--ink:#e6e3dd;--muted:#a0a4ab;--line:#2c3138;--acc:#d6a06a;--chat:#262b31;--night:#0f1317}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Gowun Batang","Nanum Myeongjo",serif;word-break:keep-all;overflow-wrap:anywhere}
+a{color:inherit}
+.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.top .in{max-width:720px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:10px;font-family:"Gothic A1",sans-serif;font-size:14px}
+.top .brand{font-family:Hahmlet,serif;font-weight:700;text-decoration:none;font-size:16px}
+.top .sp{flex:1}
+.top button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:99px;padding:6px 12px;cursor:pointer;min-height:34px}
+.top button[aria-pressed="false"]{color:var(--muted)}
+.wrap{max-width:720px;margin:0 auto;padding:28px 16px 80px}
+h1,h2{font-family:Hahmlet,serif;font-weight:700;line-height:1.3;margin:0}
+.ep-title{font-size:clamp(26px,5vw,34px)}
+.meta{font-family:"Gothic A1",sans-serif;font-size:13px;color:var(--muted);margin:8px 0 26px}
+article p{font-size:18px;line-height:1.95;margin:0 0 20px}
+article p.time b{font-weight:400}
+article p.end{text-align:center;color:var(--muted);font-family:"Gothic A1",sans-serif;font-size:14px;margin-top:36px}
+.chat{margin:0 0 20px;display:grid;gap:6px}
+.msg{font-family:"Gothic A1",sans-serif;font-size:15.5px;line-height:1.7;background:var(--chat);border-radius:12px;padding:10px 14px;max-width:92%}
+.msg .who{display:block;font-size:12.5px;font-weight:700;color:var(--muted)}
+.msg.sub{background:transparent;padding:0 14px;color:var(--muted);font-size:14px}
+figure{margin:6px 0 26px}figure img{display:block;width:100%;height:auto;border-radius:8px;border:1px solid var(--line);background:var(--paper)}
+figure.cover{margin:0 0 30px}
+html.noillus figure{display:none}
+.foot{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);font-family:"Gothic A1",sans-serif;font-size:12.5px;color:var(--muted);line-height:1.7;text-align:center}
+.nav{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:34px;font-family:"Gothic A1",sans-serif}
+.nav a,.nav span{display:block;border:1px solid var(--line);background:var(--paper);border-radius:12px;padding:12px 14px;text-decoration:none;font-size:14px;min-height:48px}
+.nav span{color:var(--muted)}.nav .next{text-align:right}
+.nav small{display:block;color:var(--muted);font-size:12px}
+.hero{background:var(--night);color:#eef1f4;border-radius:16px;padding:34px 24px;margin-bottom:28px}
+.hero .eb{font-family:"Gothic A1",sans-serif;font-size:12px;letter-spacing:.16em;color:#d39b62}
+.hero h1{font-size:clamp(28px,6vw,40px);margin:10px 0 8px}
+.hero p{font-size:16px;line-height:1.8;color:#c9d0d8;margin:0}
+.hero .cta{display:inline-block;margin-top:18px;background:#d39b62;color:#1b2430;text-decoration:none;font-family:"Gothic A1",sans-serif;font-weight:700;font-size:15px;padding:11px 18px;border-radius:99px}
+.list{display:grid;gap:12px;padding:0;margin:0;list-style:none}
+.list a{display:grid;grid-template-columns:120px minmax(0,1fr);gap:14px;align-items:center;text-decoration:none;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:10px}
+.list img{width:120px;height:75px;object-fit:cover;border-radius:8px;display:block;background:var(--chat)}
+.list b{font-family:Hahmlet,serif;font-size:17px;display:block}
+.list small{font-family:"Gothic A1",sans-serif;color:var(--muted);font-size:12.5px}
+.sec{font-family:"Gothic A1",sans-serif;font-size:12px;letter-spacing:.14em;color:var(--muted);margin:30px 0 12px}
+.about{font-size:16px;line-height:1.9}
+@media (max-width:480px){article p{font-size:17px}.list a{grid-template-columns:96px minmax(0,1fr)}.list img{width:96px;height:60px}}
