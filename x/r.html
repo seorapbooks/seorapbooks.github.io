@@ -1,0 +1,5 @@
+<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex"><body><script>
+const q=new URLSearchParams(location.search).get('f')||'m4.jpg';const i=new Image();
+i.onload=()=>{const c=document.createElement('canvas');c.width=i.naturalWidth;c.height=i.naturalHeight;c.getContext('2d').drawImage(i,0,0);
+const d=c.toDataURL('image/jpeg',0.85);if(window.opener){window.opener.postMessage({k:q,d:d},'https://gemini.google.com');document.body.textContent='sent'}else document.body.textContent='no opener'};
+i.src=q;</script></body>
