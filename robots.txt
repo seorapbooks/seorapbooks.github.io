@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://seorapbooks.github.io/sitemap.xml
